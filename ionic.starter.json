@@ -1,5 +1,5 @@
 {
-  "name": "Tabs Starter",
+  "name": "IVM Template02",
   "baseref": "vue-starters",
   "tarignore": [
     "node_modules",

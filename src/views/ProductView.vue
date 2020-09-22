@@ -72,6 +72,7 @@ export default {
   }
 
 .content-wrapper {
+  margin-top: -35px;
   ion-chip {
     color: #d6d6d6;
     border: 1px #413f3f solid;
@@ -81,7 +82,7 @@ export default {
   h2 {
     color: #d4d3d3;
     font-weight: bold;
-    margin-bottom: -12px;
+    margin: 0 0 -12px 0;
   }
 
   p {
@@ -94,7 +95,7 @@ export default {
   background: #272731;
   border-radius: 10px;
   padding: 10px 10px 10px 20px;
-  margin: -60px 35px 0 0;
+  margin: -60px 35px 0 315px;
   width: 65px;
   z-index: 9999999999;
 
