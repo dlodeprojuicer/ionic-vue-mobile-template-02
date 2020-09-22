@@ -82,7 +82,7 @@ export default {
   h2 {
     color: #d4d3d3;
     font-weight: bold;
-    margin: 0 0 -12px 0;
+    margin: 22px 0 -12px 0;
   }
 
   p {
