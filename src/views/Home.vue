@@ -2,30 +2,31 @@
   <ion-page class="ion-padding">
     <ion-grid class="overview-wrapper">
       <ion-row>
-        <ion-col class="overview">Overview</ion-col>
         <ion-col>
-          <ion-icon :name="add" class="overview-add"></ion-icon>
+          <h2 class="overview">Tonight</h2>
+          <div class="date">Monday, November 25</div>
+        </ion-col>
+        <ion-col>
+          <div class="price">
+            R32 
+            <p class="total-price">Total Price</p>
+          </div>
         </ion-col>
       </ion-row>
     </ion-grid>
 
-    <CardWallet :data="cards" />
-
-    <SectionDivider data="Expenses" />
-
-    <RecentList :data="recentList" />
-
     <QuickActions />
+
+    <Card @productview="productview" />
+
   </ion-page>
 </template>
 
-<script>
-import { IonPage, IonGrid, IonRow, IonCol, IonIcon } from "@ionic/vue";
-import { person, add } from "ionicons/icons";
 
-import SectionDivider from "../components/SectionDivider";
-import CardWallet from "../components/CardWallet";
-import RecentList from "../components/RecentList";
+<script>
+import { IonPage, IonGrid, IonRow, IonCol } from "@ionic/vue";
+
+import Card from "../components/Card";
 import QuickActions from "../components/QuickActions";
 
 export default {
@@ -37,17 +38,8 @@ export default {
     IonGrid,
     IonRow,
     IonCol,
-    IonIcon,
-    SectionDivider,
-    CardWallet,
-    RecentList,
     QuickActions,
-  },
-  setup() {
-    return {
-      person,
-      add
-    }
+    Card
   },
   data() {
     return {
@@ -99,9 +91,14 @@ export default {
       ],
     };
   },
-  methods: {},
-};
+  methods: {
+    productview() {
+      this.$router.push("product-view");
+    }
+  }
+}
 </script>
+
 
 <style lang="scss" scoped>
 .overview-wrapper {
@@ -109,8 +106,9 @@ export default {
 }
 
 .overview {
-  font-size: 20px;
-  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .overview-add {
@@ -121,4 +119,28 @@ export default {
   float: right;
   font-size: 28px;
 }
+
+.price {
+  background: #312F3E;
+  width: fit-content;
+  padding: 20px 7px;
+  border-radius: 15px;
+  float: right;
+  color: #cecbcb;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  .total-price {
+    font-weight: normal;
+    margin-top: 7px;
+    font-size: 10px;
+    color: #838688;
+  }
+}
+
+.date {
+  color: #838688;
+}
 </style>
+
