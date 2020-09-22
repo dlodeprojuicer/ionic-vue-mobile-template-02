@@ -2,11 +2,11 @@
   <ion-page>
     <OverviewHeader />
     <div class="quantity-counter">
-      <ion-icon icon="add" @click="quantityFn(1)"></ion-icon>
+      <ion-icon :icon="add" @click="quantityFn(1)"></ion-icon>
       <ion-chip>
         <ion-label>{{ quantity }}</ion-label>
       </ion-chip>
-      <ion-icon icon="remove" @click="quantityFn(-1)"></ion-icon>
+      <ion-icon :icon="remove" @click="quantityFn(-1)"></ion-icon>
     </div>
     <ion-content class="ion-padding">
       <div class="content-wrapper">
@@ -33,6 +33,7 @@
 
 <script>
 import { IonPage, IonContent, IonLabel, IonChip, IonIcon } from "@ionic/vue";
+import { add, remove } from 'ionicons/icons';
 
 import OverviewHeader from "../components/OverviewHeader";
 
@@ -47,6 +48,12 @@ export default {
     IonChip, 
     IonIcon,
     OverviewHeader
+  },
+  setup() {
+    return {
+      add,
+      remove
+    }
   },
   data() {
     return {

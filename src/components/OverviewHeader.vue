@@ -1,15 +1,21 @@
 <template>
 	<div class="header">
-		<ion-icon icon="arrow-round-back" class="back"  @click="back"></ion-icon>
+		<ion-icon :icon="arrowBack" class="back"  @click="back"></ion-icon>
 	</div>
 </template>
 
 <script>
 import { IonIcon } from "@ionic/vue";
+import { arrowBack } from "ionicons/icons";
 
 export default {
 	name: "overview-header",
 	components: { IonIcon },
+	setup() {
+    return {
+      arrowBack
+    }
+  },
   methods: {
 		back() {
 			this.$router.back();
