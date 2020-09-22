@@ -4,7 +4,7 @@
 		<ion-grid>
         <ion-row>
           <ion-col>
-						<ion-icon :name="beer" class="force-down"></ion-icon>
+						<ion-icon :icon="beer" class="force-down"></ion-icon>
           </ion-col>
           <ion-col>
 						<div class="total">Total</div>
@@ -12,7 +12,7 @@
           </ion-col>
           <ion-col>
 						<div class="pay">
-							<ion-icon :name="card"></ion-icon>
+							<ion-icon :icon="card"></ion-icon>
 							<h3>Pay</h3>
 						</div>
           </ion-col>

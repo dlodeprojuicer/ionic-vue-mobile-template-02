@@ -3,7 +3,7 @@
 		<ion-tabs>
 			<ion-tab-bar>
 				<ion-tab-button :tab="item.label" v-for="(item, index) in data" :key="index" @click="goto(item.route)">
-					<ion-icon :name="item.icon"></ion-icon>
+					<ion-icon :icon="item.icon"></ion-icon>
 				</ion-tab-button>
 			</ion-tab-bar>
 		</ion-tabs>

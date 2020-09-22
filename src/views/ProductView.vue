@@ -2,11 +2,11 @@
   <ion-page>
     <OverviewHeader />
     <div class="quantity-counter">
-      <ion-icon name="add" @click="quantityFn(1)"></ion-icon>
+      <ion-icon icon="add" @click="quantityFn(1)"></ion-icon>
       <ion-chip>
         <ion-label>{{ quantity }}</ion-label>
       </ion-chip>
-      <ion-icon name="remove" @click="quantityFn(-1)"></ion-icon>
+      <ion-icon icon="remove" @click="quantityFn(-1)"></ion-icon>
     </div>
     <ion-content class="ion-padding">
       <div class="content-wrapper">

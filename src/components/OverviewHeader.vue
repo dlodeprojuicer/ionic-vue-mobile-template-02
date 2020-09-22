@@ -1,6 +1,6 @@
 <template>
 	<div class="header">
-		<ion-icon name="arrow-round-back" class="back"  @click="back"></ion-icon>
+		<ion-icon icon="arrow-round-back" class="back"  @click="back"></ion-icon>
 	</div>
 </template>
 
