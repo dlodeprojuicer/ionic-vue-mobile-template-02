@@ -1,5 +1,5 @@
 ## Ionic Vue Mobile Template 02 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0b08f0fb-5fe2-4189-a83d-c623c51ca88c/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-01/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df00213c-224d-4db4-a4bf-5dced2e2869d/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-02/deploys)
 
 Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) vue-ionic and using capacitor for native builds - These templates are from app design inspiration pages on Instagram or Dribble.
 
@@ -47,7 +47,7 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 Ionic Vue is still in beta; I am using this setup in production but please use with caution. Keep an eye on [Ionic Twitter account](https://twitter.com/Ionicframework), [forum](https://forum.ionicframework.com/) and [slack group](https://ionic-worldwide.slack.com) for updates, RCs and production release expected towards the end of the year.
 
 ## Credits
--  [manuelroviradesign](https://www.instagram.com/manuelroviradesign/) via [We Love Web Design](https://www.instagram.com/p/CC1GFMrBB6T/) - App design inspiration
+-  [sogaso](https://www.instagram.com/sogaso/) via [We Love Web Design](https://www.instagram.com/p/B9E-9DFH2-1) - App design inspiration
 - [Tami Maiwashe](https://www.linkedin.com/in/tami-maiwashe-32824a19a/) - Documentation
 
 ## Contact
