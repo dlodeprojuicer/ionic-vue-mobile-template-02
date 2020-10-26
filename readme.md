@@ -53,6 +53,7 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 ## Credits
 -  [sogaso](https://www.instagram.com/sogaso/) via [We Love Web Design](https://www.instagram.com/p/B9E-9DFH2-1) - App design inspiration
 - [Tami Maiwashe](https://www.linkedin.com/in/tami-maiwashe-32824a19a/) - Documentation
+- [おかきょー](https://twitter.com/31415O_Kyo) - [Japanese doc translation](https://github.com/dlodeprojuicer/ionic-vue-mobile-template-01/blob/master/readme-ja.md)
 
 ## Contact
 - [@dlodeprojuicer](https://twitter.com/dlodeprojuicer) on Twitter
