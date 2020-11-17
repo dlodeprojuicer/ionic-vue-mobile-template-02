@@ -5,8 +5,6 @@ Hybrid mobile template built with ([latest](https://ionicframework.com/blog/anno
 
 [Demo](https://ionic-vue-mobile-template-02.netlify.app)
 
-<a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
-
 ## Project setup
 ```
 npm install
@@ -49,6 +47,13 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 - [Blog](https://ionicframework.com/blog/announcing-ionic-vue/)
 - [Getting started](https://ionicframework.com/docs/vue/quickstart)
 - [Changelog](https://github.com/ionic-team/ionic-framework/blob/master/CHANGELOG.md)
+
+## Template affiliates
+I want to keep doing these templates for free for as long as possible. I have joined a few affialate programs to help take care of the costs. 
+- [Pixeltrue](https://www.pixeltrue.com/?via=simo) - High quality illustrations that will help you build breath-taking websites.
+- [Getrewardful](https://www.getrewardful.com/?via=simo) - Create your own affilaite program.
+
+Alternatively you can buy me a coffee <a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
 
 ## Credits
 -  [sogaso](https://www.instagram.com/sogaso/) via [We Love Web Design](https://www.instagram.com/p/B9E-9DFH2-1) - App design inspiration
