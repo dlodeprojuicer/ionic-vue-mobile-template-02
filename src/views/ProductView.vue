@@ -35,7 +35,7 @@
 import { IonPage, IonContent, IonLabel, IonChip, IonIcon } from "@ionic/vue";
 import { add, remove } from 'ionicons/icons';
 
-import OverviewHeader from "../components/OverviewHeader";
+import OverviewHeader from "../components/OverviewHeader.vue";
 
 export default {
   name: "pay",

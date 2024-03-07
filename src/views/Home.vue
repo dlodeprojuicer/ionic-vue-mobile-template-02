@@ -1,33 +1,34 @@
 <template>
   <ion-page class="ion-padding">
-    <ion-grid class="overview-wrapper">
-      <ion-row>
-        <ion-col>
-          <h2 class="overview">Tonight</h2>
-          <div class="date">Monday, November 25</div>
-        </ion-col>
-        <ion-col>
-          <div class="price">
-            R32 
-            <p class="total-price">Total Price</p>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-content>
+      <ion-grid class="overview-wrapper">
+        <ion-row>
+          <ion-col>
+            <h2 class="overview">Tonight</h2>
+            <div class="date">Monday, November 25</div>
+          </ion-col>
+          <ion-col>
+            <div class="price">
+              R32
+              <p class="total-price">Total Price</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-    <QuickActions />
+      <QuickActions />
 
-    <Card @productview="productview" />
-
+      <Card @productview="productview" />
+    </ion-content>
   </ion-page>
 </template>
 
 
 <script>
-import { IonPage, IonGrid, IonRow, IonCol } from "@ionic/vue";
+import { IonPage, IonGrid, IonRow, IonCol, IonContent } from "@ionic/vue";
 
-import Card from "../components/Card";
-import QuickActions from "../components/QuickActions";
+import Card from "../components/Card.vue";
+import QuickActions from "../components/QuickActions.vue";
 
 export default {
   name: "home",
@@ -38,6 +39,7 @@ export default {
     IonGrid,
     IonRow,
     IonCol,
+    IonContent,
     QuickActions,
     Card
   },
