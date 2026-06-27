@@ -10,25 +10,31 @@
 	</div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonTabs, IonTabBar, IonTabButton, IonIcon } from "@ionic/vue";
+import type { Component } from "vue";
 
-export default {
-	name: "page-footer",
-	components: { IonTabs, IonTabBar, IonTabButton, IonIcon },
-  props: {
-		data: {
-			type: Array,
-			required: true,
-			default: () => []
-		}
-	},
-	methods: {
-		goto(route) {
-			this.$emit("goto", route);
-		}
-	}
+interface FooterItem {
+	label: string;
+	route: string;
+	icon: string | Component;
 }
+
+defineOptions({
+	name: "page-footer"
+});
+
+defineProps<{
+	data: FooterItem[];
+}>();
+
+const emit = defineEmits<{
+	goto: [route: string];
+}>();
+
+const goto = (route: string) => {
+	emit("goto", route);
+};
 </script>
 
 <style lang="scss" scoped>

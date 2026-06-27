@@ -8,26 +8,19 @@
   </ion-grid>
 </template>
 
-<script>
+<script setup lang="ts">
+import { ref } from "vue";
 import { IonGrid, IonRow, IonCol } from "@ionic/vue";
 
-export default {
-  name: "quick-actions",
-  components: { IonGrid, IonRow, IonCol },
-  data() {
-    return {
-      active: null,
-      btns: ["Promotion", "Free Drink", "Happy Hour"]
-    }
-  },
-	methods: {
-		pay() {
-			this.$router.push("pay");
-    },
-    select(index) {
-      this.active = index;
-    }
-	}
+defineOptions({
+  name: "quick-actions"
+});
+
+const active = ref<number | null>(null);
+const btns = ["Promotion", "Free Drink", "Happy Hour"];
+
+const select = (index: number) => {
+  active.value = index;
 };
 </script>
 

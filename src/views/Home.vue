@@ -24,81 +24,22 @@
 </template>
 
 
-<script>
+<script setup lang="ts">
 import { IonPage, IonGrid, IonRow, IonCol, IonContent } from "@ionic/vue";
+import { useRouter } from "vue-router";
 
 import Card from "../components/Card.vue";
 import QuickActions from "../components/QuickActions.vue";
 
-export default {
-  name: "home",
-  title: "Home",
-  requiresAuth: false,
-  components: {
-    IonPage,
-    IonGrid,
-    IonRow,
-    IonCol,
-    IonContent,
-    QuickActions,
-    Card
-  },
-  data() {
-    return {
-      cards: [
-        {
-          cardNumber: "4524 3428 898 239",
-          balance: "12 354.05",
-          accountName: "Savings",
-          expDate: "02/2020",
-        },
-        {
-          cardNumber: "9483 2394 8987 8391",
-          balance: "1435.20",
-          accountName: "Savings",
-          expDate: "06/2024",
-        },
-        {
-          cardNumber: "3079 485 2395 3944",
-          balance: "8 200",
-          accountName: "Savings",
-          expDate: "08/2022",
-        },
-      ],
-      recentList: [
-        {
-          name: "Themna Makwa",
-          icon: "person",
-          cost: "19.30",
-          date: "12 Aug 2020, 03:23 am",
-        },
-        {
-          name: "Tami Muthambi",
-          icon: "person",
-          cost: "6.09",
-          date: "10 Aug 2020, 13:40 pm",
-        },
-        {
-          name: "Gary Goat",
-          icon: "person",
-          cost: "19.30",
-          date: "12 Aug 2020, 03:23 am",
-        },
-        {
-          name: "Jackie Chan",
-          icon: "person",
-          cost: "6.09",
-          date: "10 Aug 2020, 13:40 pm",
-        },
-      ],
-    };
-  },
-  methods: {
-    productview() {
-      this.$router.push("product-view");
-    }
-  }
-}
+defineOptions({
+  name: "home"
+});
+
+const router = useRouter();
+
+const productview = () => {
+  router.push("product-view");
+};
 </script>
 
 
@@ -145,4 +86,3 @@ export default {
   color: #838688;
 }
 </style>
-

@@ -31,42 +31,22 @@
   </ion-page>
 </template>
 
-<script>
+<script setup lang="ts">
+import { ref } from "vue";
 import { IonPage, IonContent, IonLabel, IonChip, IonIcon } from "@ionic/vue";
 import { add, remove } from 'ionicons/icons';
 
 import OverviewHeader from "../components/OverviewHeader.vue";
 
-export default {
-  name: "pay",
-  title: "Pay",
-  requiresAuth: false,
-  components: {
-    IonPage,
-    IonContent, 
-    IonLabel, 
-    IonChip, 
-    IonIcon,
-    OverviewHeader
-  },
-  setup() {
-    return {
-      add,
-      remove
-    }
-  },
-  data() {
-    return {
-      quantity: 0,
-      tips: ["15%", "25%", "60%"],
-      activeTip: -1,
-    };
-  },
-  methods: {
-    quantityFn(int) {
-      this.quantity = this.quantity + int;
-    }
-  },
+defineOptions({
+  name: "pay"
+});
+
+const quantity = ref(0);
+const tips = ["15%", "25%", "60%"];
+
+const quantityFn = (amount: number) => {
+  quantity.value += amount;
 };
 </script>
 

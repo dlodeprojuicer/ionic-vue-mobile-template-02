@@ -4,24 +4,20 @@
 	</div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonIcon } from "@ionic/vue";
 import { arrowBack } from "ionicons/icons";
+import { useRouter } from "vue-router";
 
-export default {
-	name: "overview-header",
-	components: { IonIcon },
-	setup() {
-    return {
-      arrowBack
-    }
-  },
-  methods: {
-		back() {
-			this.$router.back();
-		}
-	}
-}
+defineOptions({
+	name: "overview-header"
+});
+
+const router = useRouter();
+
+const back = () => {
+	router.back();
+};
 </script>
 
 <style lang="scss" scoped>

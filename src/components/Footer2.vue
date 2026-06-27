@@ -21,32 +21,13 @@
 	</div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonGrid, IonRow, IonCol, IonIcon } from "@ionic/vue";
 import { beer, card } from "ionicons/icons";
 
-export default {
-	name: "page2",
-	components: { IonGrid, IonRow, IonCol, IonIcon },
-  props: {
-		data: {
-			type: Array,
-			required: true,
-			default: () => []
-		}
-	},
-  setup() {
-    return {
-      beer,
-      card
-    }
-  },
-	methods: {
-		goto(route) {
-			this.$emit("goto", route);
-		}
-	}
-}
+defineOptions({
+	name: "page2"
+});
 </script>
 
 <style lang="scss" scoped>

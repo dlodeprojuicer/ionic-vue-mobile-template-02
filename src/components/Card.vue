@@ -6,16 +6,18 @@
 	</div>
 </template>
 
-<script>
+<script setup lang="ts">
+defineOptions({
+	name: "card"
+});
 
-export default {
-	name: "card",
-	methods: {
-		productView() {
-			this.$emit("productview");
-		}
-	}
-}
+const emit = defineEmits<{
+	productview: [];
+}>();
+
+const productView = () => {
+	emit("productview");
+};
 </script>
 
 <style lang="scss" scoped>
